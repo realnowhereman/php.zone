@@ -46,10 +46,36 @@ class Lesson extends Post {
   }
 }
 
-$les1 = new Lesson('Header1', 'Text', 'HW1');
+$les1 = new Lesson('Header1', 'Text1', 'HW1');
 echo 'Lesson title: ' . $les1->getTitle();
 echo "<br>";
 echo 'Lesson homework:' . $les1->getHomework();
+
+echo "<h3>HW</h3>";
+
+class PaidLesson extends Lesson {
+  private $price;
+  public function __construct(string $title, string $text, string $homework, string $price) {
+    parent::__construct($title, $text, $homework);
+    $this->price = $price;
+  }
+
+  public function getPrice(): string {
+    return $this->price;
+  }
+
+  public function setPrice(string $price): void {
+    $this->price = $price;
+  }
+}
+
+$les2 = new PaidLesson('Урок о наследовании в PHP', 'Лол, кек, чебурек', 'Ложитесь спать, утро вечера мудренее', '99 rub.');
+
+var_dump($les1);
+echo "<br>";
+echo "<br>";
+var_dump($les2);
+echo "<br>";
 ?>
 
 <!DOCTYPE html>

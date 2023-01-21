@@ -81,7 +81,7 @@ class Mouse {
   }
 
   public function sayHello() {
-    echo "Привет! Меня зовут $this->name. мой цвет - $this->color.";
+    echo "Привет! Меня зовут $this->name. Мой цвет - $this->color.";
   }
 
   public function getName(): string {
