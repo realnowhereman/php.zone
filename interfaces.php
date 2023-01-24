@@ -91,7 +91,7 @@ foreach($figures as $figure) {
     echo '<br>';
   }
   else {
-    echo 'Объект ласса ' . get_class($figure) . ' не реализует интерфейс  CalcArea.';
+    echo 'Объект класса ' . get_class($figure) . ' не реализует интерфейс  CalcArea.';
     echo '<br>';
   }
 }
