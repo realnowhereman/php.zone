@@ -83,10 +83,10 @@ $objects = [
 
 foreach ($objects as $object) {
   if ($object instanceof calcArea) {
-    echo 'Объект класса' . get_class($object) . ' реализует интерфейс CalcArea. Его площадь: ' . $object->calcArea() . '<br>';
+    echo 'Объект класса ' . get_class($object) . ' реализует интерфейс CalcArea. Его площадь: ' . $object->calcArea() . '<br>';
   }
   else {
-    echo 'Объект класса' . get_class($object) . ' не реализует интерфейс CalcArea. Его площадь: ' . $object->calcArea() . '<br>';
+    echo 'Объект класса ' . get_class($object) . ' не реализует интерфейс CalcArea. Его площадь: ' . $object->calcArea() . '<br>';
   }
 }
 ?>
