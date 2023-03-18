@@ -1,5 +1,18 @@
 <?php
-  echo "Hello world!";
+  echo "Hello world!" . "<hr>";
+
+  class Cat {
+
+  }
+
+  $cat1 = new Cat();
+  $cat2 = new Cat();
+  $cat3 = new Cat();
+  var_dump($cat1);
+  echo "<br>";
+  var_dump($cat2);
+  echo "<br>";
+  var_dump($cat3);
 ?>
 
 <!DOCTYPE html>
